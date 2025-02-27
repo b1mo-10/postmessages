@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>messi-10</title>
+    <script>
+        window.onload = function() {
+            setTimeout(() => {
+                window.postMessage({
+                    event: "loginSuccess",
+                    redirectUrl: "https://evil.com"
+                }, "*");
+            }, 3000); 
+        };
+    </script>
+</head>
+<body>
+    <h1>b1mo-10</h1>
+</body>
+</html>
